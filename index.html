@@ -59,6 +59,46 @@ tr:hover td{background:var(--s2)}
 .ml{font-size:8px;color:var(--muted2)}
 .mv{font-size:7px;color:var(--muted);font-family:'Space Mono',monospace}
 .disclaimer{font-size:10px;color:var(--muted2);border-top:1px solid var(--border);margin-top:20px;padding-top:12px}
+
+/* === 글자 확대 + 모바일 최적화 === */
+body{font-size:15px;padding:16px}
+h1{font-size:26px}
+.meta{font-size:12px}
+.notice{font-size:13px}
+.tab{font-size:14px;padding:9px 18px}
+.kpi-label{font-size:11px}
+.kpi-value{font-size:24px}
+.kpi-sub{font-size:12px}
+.card-title{font-size:12px}
+.bar-label{font-size:12px}
+.bar-fill{font-size:11px}
+.bar-amt{font-size:11px}
+.bench-name{font-size:13px}
+.bench-vals{font-size:13px}
+.bench-desc{font-size:12px}
+.ins-title{font-size:14px}
+.ins-body{font-size:13px}
+.ins-action{font-size:12px}
+table{font-size:13px}
+th{font-size:11px}
+td{font-size:13px}
+.rec-badge{font-size:11px}
+.rec-name{font-size:14px}
+.tag{font-size:11px}
+.rec-body{font-size:12px}
+.ml{font-size:10px}
+.mv{font-size:9px}
+
+@media(max-width:680px){
+  body{padding:12px}
+  .kpi-row{grid-template-columns:repeat(2,1fr)}
+  .grid2{grid-template-columns:1fr}
+  .rec-grid{grid-template-columns:1fr}
+  .bar-label{min-width:90px;max-width:90px;font-size:11px}
+  .tabs{gap:6px}
+  .tab{font-size:13px;padding:8px 12px}
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
 </style></head>
 <body>
 <h1>📋 공구 성과 리포트 — 마미약사</h1>
